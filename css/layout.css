@@ -1,35 +1,43 @@
-#a {
-  background-color: #DAD2D8
+@media only screen and (min-width: 769px) {
+  
+  aside:first-of-type div { 
+      width: 380px;
+      height: 200px;
+      line-height: 200px;
+      float: left;
+  }
+
+  aside:not(:first-of-type) div{
+    width: 190px;
+    height: 250px;
+    line-height: 250px;
+    float: left;
+  }
 }
 
-#b {
-  background-color: #504D4F;
-}
+@media only screen and (max-width: 768px) {
 
-#c {  
-  background-color: #143642;
-}
+  body {
+    width: 480px;
+    margin: 0 auto;
+  }
 
-#d {
-  background-color: #0B1E24;
-}
+  aside:first-of-type div {
+      width: 480px;
+      height: 125px;
+      line-height: 125px;
+  }
 
-#e {
-  background-color: #0F8B8D;
-}
+  aside:not(:first-of-type) div{
+    width: 240px;
+    height: 250px;
+    line-height: 250px;
+    float: left;
+  }
 
-#f {
-  background-color: #094C4D;
-}
-
-#g {
-  background-color: #EC9A29;
-}
-
-#h {
-  background-color: #6C4613;
-}
-
-#i {
-  background-color: #A8201A;
+  aside:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
