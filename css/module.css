@@ -90,7 +90,7 @@
     line-height: 125px;
   }
   
-  #e {
+  #e, #f, #g, #h {
     width: 240px;
     height: 250px;
     line-height: 250px;
@@ -108,6 +108,13 @@
     display: table;
     clear: both;
   }
+
+  #g {
+    width: 240px;
+    height: 250px;
+    line-height: 250px;
+    float: left;
+  }
   
   #h {
     width: 240px;
@@ -116,12 +123,7 @@
     float: left;
   }
   
-  #g {
-    width: 240px;
-    height: 250px;
-    line-height: 250px;
-    float: left;
-  }
+  
   
   #i {
     width: 480px;
