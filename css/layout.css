@@ -1,38 +1,62 @@
 @media only screen and (min-width: 769px) {
   
-  aside:first-of-type div { 
-      width: 380px;
-      height: 200px;
-      line-height: 200px;
-      float: left;
+  article{
+    display: flex;
+    flex-direction: row;
+  }
+
+  article article{
+    display: flex;
+    flex-direction: column;
+  }
+
+  article aside:first-of-type div { 
+    width: 50%;
+    height: 200px;
+    line-height: 200px;
+  }
+
+  article aside:first-of-type{
+    display: flex;
+    flex-direction: row;
+  }
+
+  aside:not(:first-of-type){
+    display: flex;
+    flex-direction: row;
   }
 
   aside:not(:first-of-type) div{
-    width: 190px;
+    width: 25%;
     height: 250px;
     line-height: 250px;
-    float: left;
   }
 }
 
 @media only screen and (max-width: 768px) {
 
   body {
-    width: 480px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin: 0 auto;
   }
 
+  aside:not(:first-of-type) {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
   aside:first-of-type div {
-      width: 480px;
-      height: 125px;
-      line-height: 125px;
+    width: 100%;
+    height: 125px;
+    line-height: 125px;
   }
 
   aside:not(:first-of-type) div{
-    width: 240px;
+    width: 50%;
     height: 250px;
     line-height: 250px;
-    float: left;
   }
 
   aside:after {
